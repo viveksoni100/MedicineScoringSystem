@@ -46,7 +46,7 @@ public class LoadingForm extends javax.swing.JFrame {
     private void MyInitComponents() {
 
         setTitle("Medicine Scoring System - MSS");
-        setSize(600, 400);
+        setSize(600, 430);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
 
@@ -64,8 +64,8 @@ public class LoadingForm extends javax.swing.JFrame {
             }
         }//forEnds
         
-        System.exit(0);
-
+        dispose();
+        
     }//MyInitComponentsEnds
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

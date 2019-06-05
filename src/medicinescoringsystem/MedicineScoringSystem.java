@@ -18,6 +18,7 @@ public class MedicineScoringSystem {
         // TODO code application logic here
 
                 new LoadingForm();
+                new Screen_2();
 
     }//mainEnds
 
