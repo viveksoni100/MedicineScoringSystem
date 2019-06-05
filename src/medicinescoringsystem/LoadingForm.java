@@ -1,5 +1,8 @@
 package medicinescoringsystem;
 
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
+
 public class LoadingForm extends javax.swing.JFrame {
 
     public LoadingForm() {
@@ -11,10 +14,23 @@ public class LoadingForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        loadingProgressBar = new javax.swing.JProgressBar();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
+
+        loadingProgressBar.setForeground(javax.swing.UIManager.getDefaults().getColor("TextPane.selectionBackground"));
+        loadingProgressBar.setStringPainted(true);
+        getContentPane().add(loadingProgressBar);
+        loadingProgressBar.setBounds(210, 190, 210, 25);
+
+        jLabel2.setFont(new java.awt.Font("Cantarell", 1, 24)); // NOI18N
+        jLabel2.setForeground(java.awt.Color.white);
+        jLabel2.setText("Loading . . . . . . . .");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(210, 150, 210, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loadingImage.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -33,10 +49,28 @@ public class LoadingForm extends javax.swing.JFrame {
         setSize(600, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
+
+        for (int i = 0; i <= 100; i++) {
+            final int currentValue = i;
+            try {
+                SwingUtilities.invokeLater(new Runnable() {
+                    public void run() {
+                        loadingProgressBar.setValue(currentValue);
+                    }
+                });
+                java.lang.Thread.sleep(100);
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e.getMessage());
+            }
+        }//forEnds
         
+        System.exit(0);
+
     }//MyInitComponentsEnds
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JProgressBar loadingProgressBar;
     // End of variables declaration//GEN-END:variables
 }//classEnds
