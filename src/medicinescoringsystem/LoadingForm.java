@@ -48,6 +48,7 @@ public class LoadingForm extends javax.swing.JFrame {
         setTitle("Medicine Scoring System - MSS");
         setSize(600, 430);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
 
         for (int i = 0; i <= 100; i++) {

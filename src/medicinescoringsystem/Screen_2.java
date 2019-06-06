@@ -28,9 +28,10 @@ public class Screen_2 extends javax.swing.JFrame {
 
     private void myInitComponents() {
         
-        setTitle("Scoring Systems");
+        setTitle("Medicine Scoring System - MSS");
         setSize(600, 430);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setVisible(true);
         
     }//myInitComponentsMethodEnds
