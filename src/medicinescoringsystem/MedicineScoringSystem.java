@@ -18,8 +18,8 @@ public class MedicineScoringSystem {
         // TODO code application logic here
 
                 new LoadingForm();
-                //new Screen_2();
-                new CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS();
+                new Screen_2();
+                //new CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS();
 
     }//mainEnds
 
