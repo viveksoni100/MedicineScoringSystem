@@ -319,7 +319,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JComboBox" name="comboBoxScoreASc1">
+    <Component class="javax.swing.JComboBox" name="comboBoxScoreHE">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="3">

@@ -37,7 +37,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         comboBoxScoreASc = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
-        comboBoxScoreASc1 = new javax.swing.JComboBox<>();
+        comboBoxScoreHE = new javax.swing.JComboBox<>();
         btnCalculate = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
 
@@ -127,9 +127,9 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         getContentPane().add(jLabel9);
         jLabel9.setBounds(10, 250, 210, 24);
 
-        comboBoxScoreASc1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Minimal", "Advanced" }));
-        getContentPane().add(comboBoxScoreASc1);
-        comboBoxScoreASc1.setBounds(390, 250, 190, 30);
+        comboBoxScoreHE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Minimal", "Advanced" }));
+        getContentPane().add(comboBoxScoreHE);
+        comboBoxScoreHE.setBounds(390, 250, 190, 30);
 
         btnCalculate.setText("CALCULATE");
         getContentPane().add(btnCalculate);
@@ -252,9 +252,9 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
     private javax.swing.JButton btnCalculate;
     private javax.swing.JButton btnExit;
     private javax.swing.JComboBox<String> comboBoxScoreASc;
-    private javax.swing.JComboBox<String> comboBoxScoreASc1;
     private javax.swing.JComboBox<String> comboBoxScoreGdlSA;
     private javax.swing.JComboBox<String> comboBoxScoreGlSA;
+    private javax.swing.JComboBox<String> comboBoxScoreHE;
     private javax.swing.JComboBox<String> comboBoxScoreINRPT;
     private javax.swing.JComboBox<String> comboBoxScoreMgSB;
     private javax.swing.JComboBox<String> comboBoxScoreSPPT;
