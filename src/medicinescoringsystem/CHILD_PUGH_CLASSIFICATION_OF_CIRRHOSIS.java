@@ -8,6 +8,15 @@ import org.w3c.dom.events.MouseEvent;
 
 public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
+    //instance variable
+    int scoreOfSB = 0;
+    int scoreOfSA = 0;
+    int scoreOfPT = 0;
+    int scoreOfASC = 0;
+    int scoreOfHE = 0;
+    int totalScore = 0;
+
+    //constructors
     public CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS() {
 
         initComponents();
@@ -47,53 +56,53 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel2.setText("Serum bilirubin");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(12, 56, 125, 24);
+        jLabel2.setBounds(12, 56, 134, 24);
 
         jLabel3.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel3.setText("Unit");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(296, 12, 36, 24);
+        jLabel3.setBounds(250, 10, 35, 30);
 
         jLabel4.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel4.setText("Score");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(471, 12, 47, 24);
+        jLabel4.setBounds(460, 10, 51, 24);
 
         jLabel7.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel7.setText("Factor");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(22, 12, 53, 24);
+        jLabel7.setBounds(22, 12, 55, 24);
 
         comboBoxUnitSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "μmol/L", "mg/dL" }));
         comboBoxUnitSB.setToolTipText("");
         getContentPane().add(comboBoxUnitSB);
-        comboBoxUnitSB.setBounds(270, 50, 86, 30);
+        comboBoxUnitSB.setBounds(206, 50, 120, 20);
 
-        comboBoxScoreUmolSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "less than 34", "34–51", "greater than 51" }));
+        comboBoxScoreUmolSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "less than 34", "34–51", "greater than 51" }));
         getContentPane().add(comboBoxScoreUmolSB);
-        comboBoxScoreUmolSB.setBounds(400, 50, 180, 30);
+        comboBoxScoreUmolSB.setBounds(400, 50, 180, 20);
 
-        comboBoxScoreMgSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "less than 2.0", "2.0–3.0", "greater than 3.0" }));
+        comboBoxScoreMgSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "less than 2.0", "2.0–3.0", "greater than 3.0" }));
         getContentPane().add(comboBoxScoreMgSB);
-        comboBoxScoreMgSB.setBounds(390, 50, 190, 30);
+        comboBoxScoreMgSB.setBounds(390, 50, 190, 20);
 
         jLabel5.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel5.setText("Serum albumin");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 100, 122, 24);
+        jLabel5.setBounds(10, 100, 133, 24);
 
         comboBoxUnitSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "g/L", "g/dL" }));
         comboBoxUnitSA.setToolTipText("");
         getContentPane().add(comboBoxUnitSA);
-        comboBoxUnitSA.setBounds(290, 100, 68, 30);
+        comboBoxUnitSA.setBounds(206, 100, 120, 20);
 
-        comboBoxScoreGlSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "greater than 35", "30–35", "less than 30" }));
+        comboBoxScoreGlSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "greater than 35", "30–35", "less than 30" }));
         getContentPane().add(comboBoxScoreGlSA);
-        comboBoxScoreGlSA.setBounds(400, 100, 180, 30);
+        comboBoxScoreGlSA.setBounds(400, 100, 180, 20);
 
-        comboBoxScoreGdlSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "greater than 3.5", "3.0–3.5", "less than 3.0" }));
+        comboBoxScoreGdlSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "greater than 3.5", "3.0–3.5", "less than 3.0" }));
         getContentPane().add(comboBoxScoreGdlSA);
-        comboBoxScoreGdlSA.setBounds(390, 100, 190, 30);
+        comboBoxScoreGdlSA.setBounds(390, 100, 190, 20);
 
         jLabel6.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel6.setText("Prothrombin time");
@@ -102,38 +111,48 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
         comboBoxUnitPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seconds prolonged", "INR" }));
         comboBoxUnitPT.setToolTipText("");
+        comboBoxUnitPT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBoxUnitPTActionPerformed(evt);
+            }
+        });
         getContentPane().add(comboBoxUnitPT);
-        comboBoxUnitPT.setBounds(200, 150, 164, 30);
+        comboBoxUnitPT.setBounds(206, 150, 120, 20);
 
-        comboBoxScoreSPPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0–4", "4–6", "greater than 6" }));
+        comboBoxScoreSPPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "0–4", "4–6", "greater than 6" }));
         getContentPane().add(comboBoxScoreSPPT);
-        comboBoxScoreSPPT.setBounds(400, 150, 180, 30);
+        comboBoxScoreSPPT.setBounds(400, 150, 180, 20);
 
-        comboBoxScoreINRPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "less than 1.7", "1.7–2.3", "greater than 2.3" }));
+        comboBoxScoreINRPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "less than 1.7", "1.7–2.3", "greater than 2.3" }));
         getContentPane().add(comboBoxScoreINRPT);
-        comboBoxScoreINRPT.setBounds(390, 150, 190, 30);
+        comboBoxScoreINRPT.setBounds(390, 150, 190, 20);
 
         jLabel8.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel8.setText("Ascites");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(10, 200, 160, 24);
 
-        comboBoxScoreASc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Easily controlled", "Poorly controlled" }));
+        comboBoxScoreASc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "None", "Easily controlled", "Poorly controlled" }));
         getContentPane().add(comboBoxScoreASc);
-        comboBoxScoreASc.setBounds(390, 200, 190, 30);
+        comboBoxScoreASc.setBounds(390, 200, 190, 20);
 
         jLabel9.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel9.setText("Hepatic encephalopathy");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(10, 250, 210, 24);
+        jLabel9.setBounds(10, 250, 220, 24);
 
-        comboBoxScoreHE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "None", "Minimal", "Advanced" }));
+        comboBoxScoreHE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "None", "Minimal", "Advanced" }));
         getContentPane().add(comboBoxScoreHE);
-        comboBoxScoreHE.setBounds(390, 250, 190, 30);
+        comboBoxScoreHE.setBounds(390, 250, 190, 20);
 
         btnCalculate.setText("CALCULATE");
+        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalculateActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnCalculate);
-        btnCalculate.setBounds(10, 330, 110, 30);
+        btnCalculate.setBounds(50, 330, 110, 23);
 
         btnExit.setText("EXIT");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
@@ -142,7 +161,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnExit);
-        btnExit.setBounds(500, 330, 90, 30);
+        btnExit.setBounds(450, 330, 90, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -151,6 +170,17 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void comboBoxUnitPTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxUnitPTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboBoxUnitPTActionPerformed
+
+    private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
+        totalScore = scoreOfSB + scoreOfSA + scoreOfPT + scoreOfASC + scoreOfHE;
+        String interpretationIs = null;
+        
+        JOptionPane.showMessageDialog(null, "Scor is: " + totalScore + "\n Interpretation is: " + interpretationIs, "Scoring interpretation", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnCalculateActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -195,7 +225,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         comboBoxScoreMgSB.setVisible(false);
         comboBoxScoreGdlSA.setVisible(false);
         comboBoxScoreINRPT.setVisible(false);
-        
+
         comboBoxUnitSB.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent ie) {
@@ -211,7 +241,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
             }
         });//comboBoxUnitSBEnds
-        
+
         comboBoxUnitSA.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent ie) {
@@ -227,7 +257,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
             }
         });//comboBoxUnitSAEnds
-        
+
         comboBoxUnitPT.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent ie) {
@@ -243,8 +273,155 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
             }
         });//comboBoxUnitPTEnds
-        
-        
+
+        comboBoxScoreUmolSB.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+
+                if (comboBoxScoreUmolSB.getSelectedIndex() == 1) {
+                    scoreOfSB = 1;
+                    System.err.println(scoreOfSB);
+                }
+
+                if (comboBoxScoreUmolSB.getSelectedIndex() == 2) {
+                    scoreOfSB = 2;
+                    System.err.println(scoreOfSB);
+                }
+                if (comboBoxScoreUmolSB.getSelectedIndex() == 3) {
+                    scoreOfSB = 3;
+                    System.err.println(scoreOfSB);
+                }
+            }
+        });//comboBoxScoreUmolSBEnds
+
+        comboBoxScoreMgSB.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreMgSB.getSelectedIndex() == 1) {
+                    scoreOfSB = 1;
+                }
+                if (comboBoxScoreMgSB.getSelectedIndex() == 2) {
+                    scoreOfSB = 2;
+                }
+                if (comboBoxScoreMgSB.getSelectedIndex() == 3) {
+                    scoreOfSB = 3;
+                }
+            }
+        });//comboBoxScoreMgSBEnds
+
+        comboBoxScoreGlSA.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreGlSA.getSelectedIndex() == 1) {
+                    scoreOfSA = 1;
+                    System.err.println(scoreOfSA);
+                }
+
+                if (comboBoxScoreGlSA.getSelectedIndex() == 2) {
+                    scoreOfSA = 2;
+                    System.err.println(scoreOfSA);
+                }
+                if (comboBoxScoreGlSA.getSelectedIndex() == 3) {
+                    scoreOfSA = 3;
+                    System.err.println(scoreOfSA);
+                }
+            }
+        });//comboBoxScoreGlSAEnds
+
+        comboBoxScoreGdlSA.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreGdlSA.getSelectedIndex() == 1) {
+                    scoreOfSA = 1;
+                    System.err.println(scoreOfSA);
+                }
+
+                if (comboBoxScoreGdlSA.getSelectedIndex() == 2) {
+                    scoreOfSA = 2;
+                    System.err.println(scoreOfSA);
+                }
+                if (comboBoxScoreGdlSA.getSelectedIndex() == 3) {
+                    scoreOfSA = 3;
+                    System.err.println(scoreOfSA);
+                }
+            }
+        });//comboBoxScoreGdlSAEnds
+
+        comboBoxScoreSPPT.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreSPPT.getSelectedIndex() == 1) {
+                    scoreOfPT = 1;
+                    System.err.println(scoreOfPT);
+                }
+
+                if (comboBoxScoreSPPT.getSelectedIndex() == 2) {
+                    scoreOfPT = 2;
+                    System.err.println(scoreOfPT);
+                }
+                if (comboBoxScoreSPPT.getSelectedIndex() == 3) {
+                    scoreOfPT = 3;
+                    System.err.println(scoreOfPT);
+                }
+            }
+        });//comboBoxScoreSPPTEnds
+
+        comboBoxScoreINRPT.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreINRPT.getSelectedIndex() == 1) {
+                    scoreOfPT = 1;
+                    System.err.println(scoreOfPT);
+                }
+
+                if (comboBoxScoreINRPT.getSelectedIndex() == 2) {
+                    scoreOfPT = 2;
+                    System.err.println(scoreOfPT);
+                }
+                if (comboBoxScoreINRPT.getSelectedIndex() == 3) {
+                    scoreOfPT = 3;
+                    System.err.println(scoreOfPT);
+                }
+            }
+        });//comboBoxScoreINRPTEnds
+
+        comboBoxScoreASc.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreASc.getSelectedIndex() == 1) {
+                    scoreOfASC = 1;
+                    System.err.println(scoreOfASC);
+                }
+
+                if (comboBoxScoreASc.getSelectedIndex() == 2) {
+                    scoreOfASC = 2;
+                    System.err.println(scoreOfASC);
+                }
+                if (comboBoxScoreASc.getSelectedIndex() == 3) {
+                    scoreOfASC = 3;
+                    System.err.println(scoreOfASC);
+                }
+            }
+        });//comboBoxScoreAScEnds
+
+        comboBoxScoreHE.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (comboBoxScoreHE.getSelectedIndex() == 1) {
+                    scoreOfHE = 1;
+                    System.err.println(scoreOfHE);
+                }
+
+                if (comboBoxScoreHE.getSelectedIndex() == 2) {
+                    scoreOfHE = 2;
+                    System.err.println(scoreOfHE);
+                }
+                if (comboBoxScoreHE.getSelectedIndex() == 3) {
+                    scoreOfHE = 3;
+                    System.err.println(scoreOfHE);
+                }
+            }
+        });//comboBoxScoreHEEnds
 
     }//myInitComponentsMethodEnds
 

@@ -47,7 +47,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="296" y="12" width="-1" height="-1"/>
+          <AbsoluteConstraints x="250" y="10" width="-1" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -60,7 +60,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="471" y="12" width="-1" height="-1"/>
+          <AbsoluteConstraints x="460" y="10" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -92,17 +92,18 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="270" y="50" width="-1" height="-1"/>
+          <AbsoluteConstraints x="206" y="50" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JComboBox" name="comboBoxScoreUmolSB">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="less than 34"/>
-            <StringItem index="1" value="34&#x2013;51"/>
-            <StringItem index="2" value="greater than 51"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="less than 34"/>
+            <StringItem index="2" value="34&#x2013;51"/>
+            <StringItem index="3" value="greater than 51"/>
           </StringArray>
         </Property>
       </Properties>
@@ -118,10 +119,11 @@
     <Component class="javax.swing.JComboBox" name="comboBoxScoreMgSB">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="less than 2.0"/>
-            <StringItem index="1" value="2.0&#x2013;3.0"/>
-            <StringItem index="2" value="greater than 3.0"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="less than 2.0"/>
+            <StringItem index="2" value="2.0&#x2013;3.0"/>
+            <StringItem index="3" value="greater than 3.0"/>
           </StringArray>
         </Property>
       </Properties>
@@ -162,17 +164,18 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="290" y="100" width="-1" height="-1"/>
+          <AbsoluteConstraints x="206" y="100" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JComboBox" name="comboBoxScoreGlSA">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="greater than 35"/>
-            <StringItem index="1" value="30&#x2013;35"/>
-            <StringItem index="2" value="less than 30"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="greater than 35"/>
+            <StringItem index="2" value="30&#x2013;35"/>
+            <StringItem index="3" value="less than 30"/>
           </StringArray>
         </Property>
       </Properties>
@@ -188,10 +191,11 @@
     <Component class="javax.swing.JComboBox" name="comboBoxScoreGdlSA">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="greater than 3.5"/>
-            <StringItem index="1" value="3.0&#x2013;3.5"/>
-            <StringItem index="2" value="less than 3.0"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="greater than 3.5"/>
+            <StringItem index="2" value="3.0&#x2013;3.5"/>
+            <StringItem index="3" value="less than 3.0"/>
           </StringArray>
         </Property>
       </Properties>
@@ -227,22 +231,26 @@
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboBoxUnitPTActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="200" y="150" width="-1" height="-1"/>
+          <AbsoluteConstraints x="206" y="150" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JComboBox" name="comboBoxScoreSPPT">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="0&#x2013;4"/>
-            <StringItem index="1" value="4&#x2013;6"/>
-            <StringItem index="2" value="greater than 6"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="0&#x2013;4"/>
+            <StringItem index="2" value="4&#x2013;6"/>
+            <StringItem index="3" value="greater than 6"/>
           </StringArray>
         </Property>
       </Properties>
@@ -258,10 +266,11 @@
     <Component class="javax.swing.JComboBox" name="comboBoxScoreINRPT">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="less than 1.7"/>
-            <StringItem index="1" value="1.7&#x2013;2.3"/>
-            <StringItem index="2" value="greater than 2.3"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="less than 1.7"/>
+            <StringItem index="2" value="1.7&#x2013;2.3"/>
+            <StringItem index="3" value="greater than 2.3"/>
           </StringArray>
         </Property>
       </Properties>
@@ -290,10 +299,11 @@
     <Component class="javax.swing.JComboBox" name="comboBoxScoreASc">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="None"/>
-            <StringItem index="1" value="Easily controlled"/>
-            <StringItem index="2" value="Poorly controlled"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="None"/>
+            <StringItem index="2" value="Easily controlled"/>
+            <StringItem index="3" value="Poorly controlled"/>
           </StringArray>
         </Property>
       </Properties>
@@ -315,17 +325,18 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="250" width="210" height="-1"/>
+          <AbsoluteConstraints x="10" y="250" width="220" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JComboBox" name="comboBoxScoreHE">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="None"/>
-            <StringItem index="1" value="Minimal"/>
-            <StringItem index="2" value="Advanced"/>
+          <StringArray count="4">
+            <StringItem index="0" value="..."/>
+            <StringItem index="1" value="None"/>
+            <StringItem index="2" value="Minimal"/>
+            <StringItem index="3" value="Advanced"/>
           </StringArray>
         </Property>
       </Properties>
@@ -342,9 +353,12 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="CALCULATE"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalculateActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="330" width="110" height="-1"/>
+          <AbsoluteConstraints x="50" y="330" width="110" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -357,7 +371,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="500" y="330" width="90" height="-1"/>
+          <AbsoluteConstraints x="450" y="330" width="90" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

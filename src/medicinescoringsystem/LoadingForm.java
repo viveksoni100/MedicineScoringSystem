@@ -51,7 +51,7 @@ public class LoadingForm extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
 
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 0; i <= 100; i+=5) {
             final int currentValue = i;
             try {
                 SwingUtilities.invokeLater(new Runnable() {
