@@ -31,12 +31,12 @@ public class Screen_2 extends javax.swing.JFrame {
 
         cbScoresAll.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "..." }));
         getContentPane().add(cbScoresAll);
-        cbScoresAll.setBounds(120, 130, 380, 30);
+        cbScoresAll.setBounds(240, 10, 380, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loadingImage.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/allScoreDisplayImage.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 400);
+        jLabel1.setBounds(0, 0, 630, 350);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -44,7 +44,7 @@ public class Screen_2 extends javax.swing.JFrame {
     private void myInitComponents() {
 
         setTitle("Medicine Scoring System - MSS");
-        setSize(600, 430);
+        setSize(626, 352);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -94,7 +94,7 @@ public class Screen_2 extends javax.swing.JFrame {
                 
                 if (cbScoresAll.getSelectedItem().equals("DummyScore")) {
                     
-                    new CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS();
+                    new DummyScore();
                     
                 }
             }

@@ -47,6 +47,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         comboBoxScoreHE = new javax.swing.JComboBox<>();
         btnCalculate = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
+        BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -162,7 +163,12 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnExit);
-        btnExit.setBounds(450, 330, 90, 30);
+        btnExit.setBounds(440, 330, 90, 30);
+
+        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/scoreImage.png"))); // NOI18N
+        BG.setText("jLabel1");
+        getContentPane().add(BG);
+        BG.setBounds(-10, 0, 610, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -414,6 +420,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
     }//myInitComponentsMethodEnds
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BG;
     private javax.swing.JButton btnCalculate;
     private javax.swing.JButton btnExit;
     private javax.swing.JComboBox<String> comboBoxScoreASc;
