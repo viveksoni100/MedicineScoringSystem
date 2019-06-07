@@ -19,7 +19,6 @@ public class MedicineScoringSystem {
 
                 new LoadingForm();
                 new Screen_2();
-                //new CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS();
 
     }//mainEnds
 

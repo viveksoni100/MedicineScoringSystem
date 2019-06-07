@@ -2,9 +2,7 @@ package medicinescoringsystem;
 
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.awt.event.MouseAdapter;
 import javax.swing.JOptionPane;
-import org.w3c.dom.events.MouseEvent;
 
 public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
@@ -56,53 +54,56 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel2.setText("Serum bilirubin");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(12, 56, 134, 24);
+        jLabel2.setBounds(12, 56, 125, 24);
 
         jLabel3.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
+        jLabel3.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
         jLabel3.setText("Unit");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(250, 10, 35, 30);
+        jLabel3.setBounds(250, 10, 70, 30);
 
         jLabel4.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
+        jLabel4.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
         jLabel4.setText("Score");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(460, 10, 51, 24);
+        jLabel4.setBounds(460, 10, 47, 24);
 
         jLabel7.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
+        jLabel7.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
         jLabel7.setText("Factor");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(22, 12, 55, 24);
+        jLabel7.setBounds(22, 12, 53, 24);
 
         comboBoxUnitSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "μmol/L", "mg/dL" }));
         comboBoxUnitSB.setToolTipText("");
         getContentPane().add(comboBoxUnitSB);
-        comboBoxUnitSB.setBounds(206, 50, 120, 20);
+        comboBoxUnitSB.setBounds(206, 50, 120, 30);
 
         comboBoxScoreUmolSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "less than 34", "34–51", "greater than 51" }));
         getContentPane().add(comboBoxScoreUmolSB);
-        comboBoxScoreUmolSB.setBounds(400, 50, 180, 20);
+        comboBoxScoreUmolSB.setBounds(400, 50, 180, 30);
 
         comboBoxScoreMgSB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "less than 2.0", "2.0–3.0", "greater than 3.0" }));
         getContentPane().add(comboBoxScoreMgSB);
-        comboBoxScoreMgSB.setBounds(390, 50, 190, 20);
+        comboBoxScoreMgSB.setBounds(390, 50, 190, 30);
 
         jLabel5.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel5.setText("Serum albumin");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 100, 133, 24);
+        jLabel5.setBounds(10, 100, 122, 24);
 
         comboBoxUnitSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "g/L", "g/dL" }));
         comboBoxUnitSA.setToolTipText("");
         getContentPane().add(comboBoxUnitSA);
-        comboBoxUnitSA.setBounds(206, 100, 120, 20);
+        comboBoxUnitSA.setBounds(206, 100, 120, 30);
 
         comboBoxScoreGlSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "greater than 35", "30–35", "less than 30" }));
         getContentPane().add(comboBoxScoreGlSA);
-        comboBoxScoreGlSA.setBounds(400, 100, 180, 20);
+        comboBoxScoreGlSA.setBounds(400, 100, 180, 30);
 
         comboBoxScoreGdlSA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "greater than 3.5", "3.0–3.5", "less than 3.0" }));
         getContentPane().add(comboBoxScoreGdlSA);
-        comboBoxScoreGdlSA.setBounds(390, 100, 190, 20);
+        comboBoxScoreGdlSA.setBounds(390, 100, 190, 30);
 
         jLabel6.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel6.setText("Prothrombin time");
@@ -117,15 +118,15 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             }
         });
         getContentPane().add(comboBoxUnitPT);
-        comboBoxUnitPT.setBounds(206, 150, 120, 20);
+        comboBoxUnitPT.setBounds(206, 150, 120, 30);
 
         comboBoxScoreSPPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "0–4", "4–6", "greater than 6" }));
         getContentPane().add(comboBoxScoreSPPT);
-        comboBoxScoreSPPT.setBounds(400, 150, 180, 20);
+        comboBoxScoreSPPT.setBounds(400, 150, 180, 30);
 
         comboBoxScoreINRPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "less than 1.7", "1.7–2.3", "greater than 2.3" }));
         getContentPane().add(comboBoxScoreINRPT);
-        comboBoxScoreINRPT.setBounds(390, 150, 190, 20);
+        comboBoxScoreINRPT.setBounds(390, 150, 190, 30);
 
         jLabel8.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel8.setText("Ascites");
@@ -134,7 +135,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
         comboBoxScoreASc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "None", "Easily controlled", "Poorly controlled" }));
         getContentPane().add(comboBoxScoreASc);
-        comboBoxScoreASc.setBounds(390, 200, 190, 20);
+        comboBoxScoreASc.setBounds(390, 200, 190, 30);
 
         jLabel9.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel9.setText("Hepatic encephalopathy");
@@ -143,7 +144,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
         comboBoxScoreHE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "None", "Minimal", "Advanced" }));
         getContentPane().add(comboBoxScoreHE);
-        comboBoxScoreHE.setBounds(390, 250, 190, 20);
+        comboBoxScoreHE.setBounds(390, 250, 190, 30);
 
         btnCalculate.setText("CALCULATE");
         btnCalculate.addActionListener(new java.awt.event.ActionListener() {
@@ -152,7 +153,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCalculate);
-        btnCalculate.setBounds(50, 330, 110, 23);
+        btnCalculate.setBounds(30, 330, 130, 30);
 
         btnExit.setText("EXIT");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
@@ -161,14 +162,15 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnExit);
-        btnExit.setBounds(450, 330, 90, 23);
+        btnExit.setBounds(450, 330, 90, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        //System.exit(0);
+        dispose();
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void comboBoxUnitPTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxUnitPTActionPerformed
@@ -178,8 +180,15 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
     private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
         totalScore = scoreOfSB + scoreOfSA + scoreOfPT + scoreOfASC + scoreOfHE;
         String interpretationIs = null;
-        
-        JOptionPane.showMessageDialog(null, "Scor is: " + totalScore + "\n Interpretation is: " + interpretationIs, "Scoring interpretation", JOptionPane.INFORMATION_MESSAGE);
+
+        if (totalScore > 7) {
+            interpretationIs = "decomponsated cirrhosis";
+        }
+        if (totalScore <= 7) {
+            interpretationIs = "not decomponsated cirrhosis";
+        }
+
+        JOptionPane.showMessageDialog(null, "Score is: " + totalScore + "\nInterpretation is: " + interpretationIs, "Scoring interpretation", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btnCalculateActionPerformed
 
     public static void main(String args[]) {
@@ -280,16 +289,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
 
                 if (comboBoxScoreUmolSB.getSelectedIndex() == 1) {
                     scoreOfSB = 1;
-                    System.err.println(scoreOfSB);
                 }
 
                 if (comboBoxScoreUmolSB.getSelectedIndex() == 2) {
                     scoreOfSB = 2;
-                    System.err.println(scoreOfSB);
                 }
                 if (comboBoxScoreUmolSB.getSelectedIndex() == 3) {
                     scoreOfSB = 3;
-                    System.err.println(scoreOfSB);
                 }
             }
         });//comboBoxScoreUmolSBEnds
@@ -314,16 +320,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             public void itemStateChanged(ItemEvent e) {
                 if (comboBoxScoreGlSA.getSelectedIndex() == 1) {
                     scoreOfSA = 1;
-                    System.err.println(scoreOfSA);
                 }
 
                 if (comboBoxScoreGlSA.getSelectedIndex() == 2) {
                     scoreOfSA = 2;
-                    System.err.println(scoreOfSA);
                 }
                 if (comboBoxScoreGlSA.getSelectedIndex() == 3) {
                     scoreOfSA = 3;
-                    System.err.println(scoreOfSA);
                 }
             }
         });//comboBoxScoreGlSAEnds
@@ -333,16 +336,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             public void itemStateChanged(ItemEvent e) {
                 if (comboBoxScoreGdlSA.getSelectedIndex() == 1) {
                     scoreOfSA = 1;
-                    System.err.println(scoreOfSA);
                 }
 
                 if (comboBoxScoreGdlSA.getSelectedIndex() == 2) {
                     scoreOfSA = 2;
-                    System.err.println(scoreOfSA);
                 }
                 if (comboBoxScoreGdlSA.getSelectedIndex() == 3) {
                     scoreOfSA = 3;
-                    System.err.println(scoreOfSA);
                 }
             }
         });//comboBoxScoreGdlSAEnds
@@ -352,16 +352,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             public void itemStateChanged(ItemEvent e) {
                 if (comboBoxScoreSPPT.getSelectedIndex() == 1) {
                     scoreOfPT = 1;
-                    System.err.println(scoreOfPT);
                 }
 
                 if (comboBoxScoreSPPT.getSelectedIndex() == 2) {
                     scoreOfPT = 2;
-                    System.err.println(scoreOfPT);
                 }
                 if (comboBoxScoreSPPT.getSelectedIndex() == 3) {
                     scoreOfPT = 3;
-                    System.err.println(scoreOfPT);
                 }
             }
         });//comboBoxScoreSPPTEnds
@@ -371,16 +368,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             public void itemStateChanged(ItemEvent e) {
                 if (comboBoxScoreINRPT.getSelectedIndex() == 1) {
                     scoreOfPT = 1;
-                    System.err.println(scoreOfPT);
                 }
 
                 if (comboBoxScoreINRPT.getSelectedIndex() == 2) {
                     scoreOfPT = 2;
-                    System.err.println(scoreOfPT);
                 }
                 if (comboBoxScoreINRPT.getSelectedIndex() == 3) {
                     scoreOfPT = 3;
-                    System.err.println(scoreOfPT);
                 }
             }
         });//comboBoxScoreINRPTEnds
@@ -390,16 +384,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             public void itemStateChanged(ItemEvent e) {
                 if (comboBoxScoreASc.getSelectedIndex() == 1) {
                     scoreOfASC = 1;
-                    System.err.println(scoreOfASC);
                 }
 
                 if (comboBoxScoreASc.getSelectedIndex() == 2) {
                     scoreOfASC = 2;
-                    System.err.println(scoreOfASC);
                 }
                 if (comboBoxScoreASc.getSelectedIndex() == 3) {
                     scoreOfASC = 3;
-                    System.err.println(scoreOfASC);
                 }
             }
         });//comboBoxScoreAScEnds
@@ -409,16 +400,13 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             public void itemStateChanged(ItemEvent e) {
                 if (comboBoxScoreHE.getSelectedIndex() == 1) {
                     scoreOfHE = 1;
-                    System.err.println(scoreOfHE);
                 }
 
                 if (comboBoxScoreHE.getSelectedIndex() == 2) {
                     scoreOfHE = 2;
-                    System.err.println(scoreOfHE);
                 }
                 if (comboBoxScoreHE.getSelectedIndex() == 3) {
                     scoreOfHE = 3;
-                    System.err.println(scoreOfHE);
                 }
             }
         });//comboBoxScoreHEEnds
@@ -448,4 +436,4 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
-}
+}//classEnds
