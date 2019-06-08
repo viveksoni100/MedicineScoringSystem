@@ -86,17 +86,20 @@ public class Screen_2 extends javax.swing.JFrame {
             @Override
             public void itemStateChanged(ItemEvent ie) {
 
-                if (cbScoresAll.getSelectedItem().equals("CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS")) {
-                    
-                    new CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS();
-                    
-                }
-                
-                if (cbScoresAll.getSelectedItem().equals("DummyScore")) {
-                    
-                    new DummyScore();
-                    
-                }
+                if (ie.getStateChange() == ItemEvent.SELECTED) {
+                    if (cbScoresAll.getSelectedItem().equals("CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS")) {
+
+                        new CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS();
+
+                    }
+
+                    if (cbScoresAll.getSelectedItem().equals("DummyScore")) {
+
+                        new DummyScore();
+
+                    }
+                }//outerIFEnds
+
             }
         });//cbScoresAllListenerEnds
 

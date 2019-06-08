@@ -16,6 +16,7 @@ public class LoadingForm extends javax.swing.JFrame {
 
         loadingProgressBar = new javax.swing.JProgressBar();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -31,6 +32,13 @@ public class LoadingForm extends javax.swing.JFrame {
         jLabel2.setText("Loading . . . . . . . .");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(210, 150, 210, 40);
+
+        jLabel3.setFont(new java.awt.Font("Cantarell", 1, 36)); // NOI18N
+        jLabel3.setForeground(javax.swing.UIManager.getDefaults().getColor("Button.highlight"));
+        jLabel3.setText("Medicine Scoring System");
+        jLabel3.setBorder(null);
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(90, 90, 430, 60);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loadingImage.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -72,6 +80,7 @@ public class LoadingForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JProgressBar loadingProgressBar;
     // End of variables declaration//GEN-END:variables
 }//classEnds
