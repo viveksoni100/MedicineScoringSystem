@@ -98,6 +98,12 @@ public class Screen_2 extends javax.swing.JFrame {
                         new GLASGOW_COMA_SCALE_FOR_HEAD_INJURY();
 
                     }
+
+                    if (cbScoresAll.getSelectedItem().equals("DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA")) {
+
+                        new DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA();
+
+                    }
                 }//outerIFEnds
 
             }
