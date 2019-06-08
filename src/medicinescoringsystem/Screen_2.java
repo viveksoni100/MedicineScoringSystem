@@ -93,9 +93,9 @@ public class Screen_2 extends javax.swing.JFrame {
 
                     }
 
-                    if (cbScoresAll.getSelectedItem().equals("DummyScore")) {
+                    if (cbScoresAll.getSelectedItem().equals("GLASGOW_COMA_SCALE_FOR_HEAD_INJURY")) {
 
-                        new DummyScore();
+                        new GLASGOW_COMA_SCALE_FOR_HEAD_INJURY();
 
                     }
                 }//outerIFEnds
