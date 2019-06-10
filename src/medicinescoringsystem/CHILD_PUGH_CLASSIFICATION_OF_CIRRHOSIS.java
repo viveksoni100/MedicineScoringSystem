@@ -126,7 +126,7 @@ public class CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS extends javax.swing.JFrame {
             }
         });
         getContentPane().add(comboBoxUnitPT);
-        comboBoxUnitPT.setBounds(206, 150, 120, 30);
+        comboBoxUnitPT.setBounds(162, 150, 164, 30);
 
         comboBoxScoreSPPT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "0–4", "4–6", "greater than 6" }));
         getContentPane().add(comboBoxScoreSPPT);

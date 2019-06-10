@@ -4,7 +4,6 @@ ROLL : 32
 CLASS : MCA-4
 SUB : DAD
  */
-
 package medicinescoringsystem;
 
 import java.awt.event.ItemEvent;
@@ -12,12 +11,11 @@ import java.awt.event.ItemListener;
 
 import javax.swing.JOptionPane;
 
- /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author root
@@ -51,15 +49,10 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnCalculate = new javax.swing.JButton();
-        btnExit = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        comboBoxUnitGlucose = new javax.swing.JComboBox<>();
-        cbScoreGlucose_mg_dl = new javax.swing.JComboBox<>();
-        cbScoreGlucose_mmol_L = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
         cbScoreInsulin = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
@@ -68,34 +61,21 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
         cbScoreProinsulin = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
         cbScoreUrineOrPlasma = new javax.swing.JComboBox<>();
+        btnExit = new javax.swing.JButton();
+        btnCalculate = new javax.swing.JButton();
+        cbScoreGlucose_mg_dl = new javax.swing.JComboBox<>();
+        cbScoreGlucose_mmol_L = new javax.swing.JComboBox<>();
+        comboBoxUnitGlucose = new javax.swing.JComboBox<>();
         BG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        btnCalculate.setText("CALCULATE");
-        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalculateActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnCalculate);
-        btnCalculate.setBounds(30, 330, 130, 23);
-
-        btnExit.setText("EXIT");
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnExit);
-        btnExit.setBounds(440, 330, 90, 23);
-
         jLabel7.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel7.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
         jLabel7.setText("Factor");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(22, 12, 55, 24);
+        jLabel7.setBounds(22, 12, 53, 24);
 
         jLabel3.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel3.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
@@ -107,34 +87,21 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
         jLabel4.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
         jLabel4.setText("Score");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(460, 10, 51, 24);
+        jLabel4.setBounds(460, 10, 47, 24);
 
         jLabel2.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel2.setText("Glucose");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(12, 56, 72, 24);
-
-        comboBoxUnitGlucose.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "mmol/L", "mg/dL" }));
-        comboBoxUnitGlucose.setToolTipText("");
-        getContentPane().add(comboBoxUnitGlucose);
-        comboBoxUnitGlucose.setBounds(206, 50, 120, 20);
-
-        cbScoreGlucose_mg_dl.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "≥40", "≤45" }));
-        getContentPane().add(cbScoreGlucose_mg_dl);
-        cbScoreGlucose_mg_dl.setBounds(360, 50, 220, 20);
-
-        cbScoreGlucose_mmol_L.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "≥2.2", "≤2.5" }));
-        getContentPane().add(cbScoreGlucose_mmol_L);
-        cbScoreGlucose_mmol_L.setBounds(350, 50, 230, 20);
+        jLabel2.setBounds(12, 56, 65, 24);
 
         jLabel5.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel5.setText("Insulin");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 100, 58, 24);
+        jLabel5.setBounds(10, 100, 53, 24);
 
         cbScoreInsulin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "<3", "≥3" }));
         getContentPane().add(cbScoreInsulin);
-        cbScoreInsulin.setBounds(350, 100, 230, 20);
+        cbScoreInsulin.setBounds(350, 100, 230, 30);
 
         jLabel6.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel6.setText("C- Peptide");
@@ -143,7 +110,7 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
 
         cbScoreCPeptide.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "<200", "≥200" }));
         getContentPane().add(cbScoreCPeptide);
-        cbScoreCPeptide.setBounds(350, 150, 230, 20);
+        cbScoreCPeptide.setBounds(350, 150, 230, 30);
 
         jLabel8.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel8.setText("Proinsulin");
@@ -152,7 +119,7 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
 
         cbScoreProinsulin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "<5", "≥5" }));
         getContentPane().add(cbScoreProinsulin);
-        cbScoreProinsulin.setBounds(350, 200, 230, 20);
+        cbScoreProinsulin.setBounds(350, 200, 230, 30);
 
         jLabel9.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         jLabel9.setText("Urine or Plasma Sulfonylurea");
@@ -161,7 +128,37 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
 
         cbScoreUrineOrPlasma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "YES", "NO" }));
         getContentPane().add(cbScoreUrineOrPlasma);
-        cbScoreUrineOrPlasma.setBounds(350, 250, 230, 20);
+        cbScoreUrineOrPlasma.setBounds(350, 250, 230, 30);
+
+        btnExit.setText("EXIT");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnExit);
+        btnExit.setBounds(440, 330, 90, 30);
+
+        btnCalculate.setText("CALCULATE");
+        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalculateActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCalculate);
+        btnCalculate.setBounds(30, 330, 130, 30);
+
+        cbScoreGlucose_mg_dl.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "≥40", "≤45" }));
+        getContentPane().add(cbScoreGlucose_mg_dl);
+        cbScoreGlucose_mg_dl.setBounds(360, 50, 220, 30);
+
+        cbScoreGlucose_mmol_L.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "...", "≥2.2", "≤2.5" }));
+        getContentPane().add(cbScoreGlucose_mmol_L);
+        cbScoreGlucose_mmol_L.setBounds(350, 50, 230, 30);
+
+        comboBoxUnitGlucose.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "mmol/L", "mg/dL" }));
+        getContentPane().add(comboBoxUnitGlucose);
+        comboBoxUnitGlucose.setBounds(200, 50, 125, 30);
 
         BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/scoreImage.png"))); // NOI18N
         BG.setText("jLabel1");
@@ -170,6 +167,12 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        //System.exit(0);
+        dispose();
+    }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
         totalScore = scoreOfGlucose + scoreOfInsulin + scoreOfCPeptide + scoreOfProinsulin + scoreOfUrineOrPlasma;
@@ -197,12 +200,6 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
         JOptionPane.showMessageDialog(null, "Score is: " + totalScore + "\nInterpretation is: " + interpretationIs, "Scoring interpretation", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btnCalculateActionPerformed
 
-    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        // TODO add your handling code here:
-        //System.exit(0);
-        dispose();
-    }//GEN-LAST:event_btnExitActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -220,13 +217,13 @@ public class DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA extends javax.swing.JFram
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DIAGNOSTIC_INTERPRETATION_OF_HYPOGLYCEMIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CHILD_PUGH_CLASSIFICATION_OF_CIRRHOSIS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
